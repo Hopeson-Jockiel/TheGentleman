@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="TheGentleman is a premium e-commerce brand offering timeless men's fashion — from handcrafted leather shoes and tailored suits to accessories for the modern gentleman.">
+  <meta name="keywords" content="men's fashion, classic menswear, luxury clothing, gentleman style, bespoke tailoring, leather shoes, men's suits, premium accessories, TheGentleman Nigeria, old money fashion, elegant menswear, timeless style">
+  <meta name="author" content="Hopeson Ahamefula Jockiel">
+  <title>The Classic Men's Fashion, TheGentleman Nigeria</title>
+  <meta property="og:title" content="TheGentleman | Timeless Men's Fashion">
+  <meta property="og:description" content="Discover classic menswear, shoes, and accessories for the modern gentleman.">
+  <meta property="og:image" content="https://thegentleman.ng/Images/og-image.jpg">
+  <meta property="og:url" content="https://thegentleman.ng">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TheGentleman | Timeless Men's Fashion">
+  <meta name="twitter:description" content="Luxury menswear and accessories curated for the modern gentleman.">
+  <meta name="twitter:image" content="https://thegentleman.ng/Images/og-image.jpg">
+  <meta name="twitter:site" content="@thegentlemanng">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header id="head">
+  <div class="header-container">
+    
+    <!-- Logo -->
+    <div class="logo">
+      <h1>TheGentleman</h1>
+    </div>
+
+    <!-- Cart Bar -->
+    <div id="cart-bar">
+      🛒 Total: ₦<span id="totalPrice">0.00</span>
+      <button id="checkoutBtn">Checkout</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar-container">
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header
+
+
+<main>
+    <section class="hero">
+      <h2>Elegance. Heritage. Confidence. Curated pieces for the Modern Gentleman</h2>
+    </section>
+    <section id="shop">
+      <div class="catalogue" catalogue-id="1">
+        <img src="./Images/oxford-shoe.jpg" alt="oxford-shoe">
+        <h3>Oxford Shoes</h3>
+        <p>₦120,000</p>
+        <input type="number" min="1" value="1" id="quantity-1" onchange="updateQuantity(1)">
+        <button id="btn-1" onclick="toggleCart(1)">Add to Cart</button>
+      </div>
+
+      <div class="catalogue" catalogue-id="2">
+        <img src="./Images/italian-belt.jpg" alt="Italian Belt">
+        <h3>Italian Belt</h3>
+        <p>₦40,000</p>
+        <input type="number" min="1" value="1" id="quantity-2" onchange="updateQuantity(2)">
+        <button id="btn-2" onclick="toggleCart(2)">Add to Cart</button>
+      </div>
+      <div class="catalogue" catalogue-id="3">
+        <img src="./Images/fedora hat.jpg" alt="fedora hat">
+        <h3>Fedora Hat</h3>
+        <p>₦60,000</p>
+        <input type="number" min="1" value="1" id="quantity-3" onchange="updateQuantity(3)">
+        <button id="btn-3" onclick="toggleCart(3)">Add to Cart</button>
+      </div>
+      <div class="catalogue" catalogue-id="4">
+        <img src="./Images/Tailored PANTS.jpg" alt="Tailored Pants">
+        <h3>Tailored Pants</h3>
+        <p>₦90,000</p>
+        <input type="number" min="1" value="1" id="quantity-4" onchange="updateQuantity(4)">
+        <button id="btn-4" onclick="toggleCart(4)">Add to Cart</button>
+      </div>
+      <div class="catalogue" catalogue-id="5">
+        <img src="./Images/Linen-shirt.jpg" alt="Linen-shirt">
+        <h3>Linen Shirts</h3>
+        <p>₦70,000</p>
+        <input type="number" min="1" value="1" id="quantity-5" onchange="updateQuantity(5)">
+        <button id="btn-5" onclick="toggleCart(5)">Add to Cart</button>
+      </div>
+      <div class="catalogue" catalogue-id="6">
+        <img src="./Images/wristwatch.jpg" alt="wristwatch">
+        <h3>Wristwatch</h3>
+        <p>₦100,000</p>
+        <input type="number" min="1" value="1" id="quantity-6" onchange="updateQuantity(6)">
+        <button id="btn-6" onclick="toggleCart(6)">Add to Cart</button>
+      </div>
+      <div class="catalogue" catalogue-id="7">
+        <img src="./Images/men-jackets.jpg" alt="men-jackets">
+        <h3>Jackets</h3>
+        <p>₦100,000</p>
+        <input type="number" min="1" value="1" id="quantity-7" onchange="updateQuantity(7)">
+        <button id="btn-7" onclick="toggleCart(7)">Add to Cart</button>
+      </div>
+      <div class="catalogue" catalogue-id="8">
+        <img src="./Images/socks.jpg" alt="Socks">
+        <h3>Socks</h3>
+        <p>₦12,000</p>
+        <input type="number" min="1" value="1" id="quantity-8" onchange="updateQuantity(8)">
+        <button id="btn-8" onclick="toggleCart(8)">Add to Cart</button>
+      </div>
+      <div class="catalogue" catalogue-id="9">
+        <img src="./Images/Eye Glass.jpg" alt="Eye Glass">
+        <h3>Eye Glass</h3>
+        <p>₦25,000</p>
+        <input type="number" min="1" value="1" id="quantity-9" onchange="updateQuantity(9)">
+        <button id="btn-9" onclick="toggleCart(9)">Add to Cart</button>
+      </div>
+    </section>
+
+    <section id="banner">
+      <div><h3>Style is the silence of sophistication</h3></div>
+    </section>
+    <section id="about">
+      <div id="about-style">
+        <h2>About <span class="about-text">TheGentleman</span></h2>
+        <p>
+        <span class="about-text">TheGentleman</span> curates timeless men's fashion rooted in elegance and heritage. 
+        From handcrafted leather shoes to bespoke tailoring, we bring the essence of Old Money to today's modern man.
+        </p>
+      </div>
+    </section>
+
+</main>
+
+
+  <footer id="footer">
+    <div class="join-section">
+      <h3>Join <span class="about-text">TheGentleman</span> Circle</h3>
+      <p>Get first access to exclusive pieces, private events, and luxury offers curated for modern gentlemen.</p>
+      <form class="subscribe-form">
+          <input type="email" placeholder="Enter your email" required aria-required="true">
+          <button type="submit" aria-label="Subscribe your email address">Subscribe Now</button>
+        <div aria-live="polite" role="alert"></div>
+      </form>
+    </div>
+
+    
+   <section id="contact-section">
+    <h3>Contact</h3>
+    <address>
+      Phone: <a href="tel:+2349034682769">+234 903 468 2769</a><br>
+      Email: <a href="mailto:info@thegentleman.ng">info@thegentleman.ng</a><br>
+      Port Harcourt, Nigeria
+    </address>
+    </section>
+
+    
+    <!-- ===== Social Media Links ===== -->
+  <div class="social-links">
+    <h3>Socials</h3>
+    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+
+</footer>
+
+<div class="copyright">
+    <p>&copy; 2025 TheGentleman. All Rights Reserved.</p>
+</div>
+
+<!-- ===== Floating WhatsApp Button ===== -->
+<a href="https://wa.me/2349034682769" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<!-- 🧾 CHECKOUT MODAL -->
+<div id="checkoutModal" class="modal">
+  <div class="modal-content">
+    <h2>Checkout</h2>
+
+    <!-- This is where we'll display the items in the cart -->
+    <div id="checkoutSummary"></div>
+
+    <form id="checkoutForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" maxlength="16" required>
+
+      <label for="expiryDate">Expiry Date:</label>
+      <input type="month" id="expiryDate" required>
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" maxlength="3" required>
+
+      <div class="modal-buttons">
+        <button type="submit">Pay Now</button>
+        <button type="button" id="closeModalBtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
+
