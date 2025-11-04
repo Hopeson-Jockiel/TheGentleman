@@ -19,7 +19,7 @@ It features an interactive product catalog, cart management, responsive navigati
 
 ## 🧭 Live Demo
 
-🔗 **Live Site:** [https://]
+🔗 **Live Site:** [https://thegentleman.netlify.app/]
 
 ---
 
@@ -127,4 +127,4 @@ Frontend Engineer (in training) | Aspiring Full Stack Java Developer | Building 
 
 💼 GitHub: https://github.com/Hopeson-Jockiel
 
-📧 jockielh@gmail.COM
+📧 Email: jockielh@gmail.COM
