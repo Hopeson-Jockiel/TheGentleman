@@ -15,7 +15,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 
-// ==== 🛍️ Product Catalogue ====
+// ==== Product Catalogue ====
 const catalogues = [
   { id: 1, name: "Oxford Shoes", price: 120000 },
   { id: 2, name: "Italian Belt", price: 40000 },
@@ -36,7 +36,7 @@ function updateTotal() {
   document.getElementById("totalPrice").textContent = total.toLocaleString();
 }
 
-// ==== 🛒 Toggle Add/Remove from Cart ====
+// ==== Toggle Add/Remove from Cart ====
 function toggleCart(id) {
   const button = document.getElementById(`btn-${id}`);
   const quantityInput = document.getElementById(`quantity-${id}`);
@@ -60,7 +60,7 @@ function toggleCart(id) {
   updateTotal();
 }
 
-// ==== 🔢 Update Quantity ====
+// ==== Update Quantity ====
 function updateQuantity(id) {
   const quantityInput = document.getElementById(`quantity-${id}`);
   const quantity = parseInt(quantityInput.value) || 1;
@@ -72,7 +72,7 @@ function updateQuantity(id) {
   }
 }
 
-// ==== 💳 Checkout Modal ====
+// ==== Checkout Modal ====
 document.addEventListener("DOMContentLoaded", () => {
   const checkoutBtn = document.getElementById("checkoutBtn");
   const checkoutModal = document.getElementById("checkoutModal");
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const checkoutSummary = document.getElementById("checkoutSummary");
   const checkoutForm = document.getElementById("checkoutForm");
 
-  // ==== 🧾 Show Checkout Modal ====
+  // ==== Show Checkout Modal ====
   checkoutBtn.addEventListener("click", () => {
     if (cart.length === 0) {
       alert("🛒 Your cart is empty! Please add some items first.");
@@ -100,19 +100,19 @@ document.addEventListener("DOMContentLoaded", () => {
     checkoutModal.style.display = "flex";
   });
 
-  // ==== ❌ Close Modal ====
+  // ==== Close Modal ====
   closeModalBtn.addEventListener("click", () => {
     checkoutModal.style.display = "none";
   });
 
-  // ==== 🪟 Close Modal When Clicking Outside ====
+  // ==== Close Modal When Clicking Outside ====
   window.addEventListener("click", e => {
     if (e.target === checkoutModal) {
       checkoutModal.style.display = "none";
     }
   });
 
-  // ==== 💰 Handle Payment Submission ====
+  // ==== Handle Payment Submission ====
   checkoutForm.addEventListener("submit", e => {
     e.preventDefault();
 
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     alert(`✅ Thank you, ${name}! Your payment was successful.`);
 
-    // ==== 🔄 Reset Cart and UI ====
+    // ==== Reset Cart and UI ====
     cart = [];
     updateTotal();
     checkoutModal.style.display = "none";

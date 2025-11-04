@@ -24,9 +24,6 @@ h2, h3 {
 
 /* ===== Header Section ===== */
 
-
-/* ===== Header Section ===== */
-/* ===== HEADER SECTION ===== */
 #head {
   background: linear-gradient(135deg, #0b0b0b, #1a1a1a);
   color: #d4af37;
@@ -88,7 +85,7 @@ h2, h3 {
 
 #cart-bar button:hover {
   background-color: #f5f0e6;
-}
+} 
 
 /* Navigation */
 .navbar-container {
@@ -211,8 +208,7 @@ a {
   position: relative;
 }
 
-.hero h2,
-.hero h3{
+.hero h2{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -443,7 +439,7 @@ a {
 }
 
 /* ===== Social Media Links ===== */
-/* ===== Social Media Links Section ===== */
+
 .social-links {
   background-color: #000;
   color: #d4af37;
@@ -533,6 +529,7 @@ a {
   align-items: center;
   z-index: 1000;
   backdrop-filter: blur(4px); /* adds luxury glass blur */
+  overflow-y: auto;
 }
 
 /* ===== Modal Content ===== */
@@ -547,6 +544,8 @@ a {
   font-family: "Poppins", sans-serif;
   position: relative;
   animation: fadeInUp 0.4s ease;
+  max-height: 90vh;      /* prevents it from going beyond screen */
+  overflow-y: auto;
 }
 
 .modal-content h2 {
